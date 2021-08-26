@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+
+    <main class="flex-shrink-0">
+        <div class="container">
+
+            <h1 class="mt-5">Compose</h1>
+
+            <form class="lead" action="/compose" method="POST">
+                <div class="form-group">
+                    <label class="label-name">Title</label>
+                    <input class="form-control" type="text" name="postTitle" autocomplete="off">
+
+                </div>
+                <div class="form-group">
+                    <label class="label-name">Post</label>
+                    <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+                </div>
+                <button type="submit" name="button" class="btn publish-btn btn-info">Publish</button>
+            </form>
+    </main>
+    <%- include("partials/footer"); -%>
