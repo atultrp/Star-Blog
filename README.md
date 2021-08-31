@@ -3,7 +3,7 @@ This is the Blogging website where you can post your thoughts, your daily life r
 
 ## 📃️ Documentation
 
-This webpage is simply made by using :
+This website is simply made by using :
 * [HTML](https://www.w3schools.com/html/html_intro.asp)
 * [CSS](https://www.w3schools.com/css/default.asp)
 * [Bootstrap](https://getbootstrap.com/)
