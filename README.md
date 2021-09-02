@@ -15,7 +15,6 @@ This website is simply made by using :
 ## 📍️ Demo
 
 
-
 ## 😯️ Features
 
 - Light mode toggle
@@ -113,6 +112,9 @@ To run the project use the local server with port 4000
 * Nodejs
 * Express.js
 * EJS
+* API
+* SQL
+* MongoDB
 
 
 ## ✌️ Support
@@ -134,5 +136,3 @@ If you have any feedback, please reach out to us at atul31815@gmail.com.
 ## 🗞️ License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
