@@ -46,8 +46,11 @@ app.get("/compose", function(req, res) {
 app.post("/compose", function(req, res) {
     const post = {
         title: req.body.postTitle,
-        content: req.body.postBody
+        content: req.body.postBody,
+        authorName: req.body.authorName,
+        location: req.body.location
     };
+    console.log(post)
     posts.push(post);
     res.redirect("/");
 });
@@ -60,8 +63,11 @@ app.get("/posts/:postName", function(req, res) {
         if (storedTitle === requestedTitle) {
             res.render("post", {
                 title: post.title,
-                content: post.content
+                content: post.content,
+                authorName: post.authorName,
+                location: post.location
             });
+            console.log(name)
         }
     });
 });
