@@ -2,18 +2,46 @@
 
     <main class="flex-shrink-0">
         <div class="container">
-            <h1 class="mt-5">Home</h1>
-            <p class="lead">
-                <%= startingContent %>
-            </p>
+            <h1 class="mt-5 heading">Welcome to Star Blog</h1>
+            <div class="lead">
+
+                <p>“Throughout life, people will make you mad, disrespect you and treat you bad. Let God deal with the things they do, cause hate in your heart will consume you too.”
+                    <br> – Will Smith</p>
+
+                <p>“I think you end up doing the stuff you were supposed to do at the time you were supposed to do it.”
+                    <br> – Robert Downey Jr. </p>
+
+                <p>“If it wasn’t hard, everyone would do it. It’s the hard that makes it great.”
+                    <br> – Tom Hanks</p>
+
+                <p>“Do not let circumstances control you. You change your circumstances.”
+                    <br> – Jackie Chan</p>
+
+                <p>“Respect your efforts, respect yourself. Self-respect leads to self-discipline. When you have both firmly under your belt, that’s real power.”
+                    <br> – Clint Eastwood</p>
+
+                <p>“I believe there’s an inner power that makes winners or losers. And the winners are the ones who really listen to the truth of their hearts.”
+                    <br> – Sylvester Stallone</p>
+
+                <p>“Chemistry can be a good and bad thing. Chemistry is good when you make love with it, chemistry is bad when you make crack with it.”
+                    <br> – Adam Sandler</p>
+
+                <p>“I disagree with people who think you learn more from getting beat up than you do from winning.” –
+                    <br> Tom Cruise</p>
+
+            </div>
         </div>
+
+        <hr>
+
+        <h2 class="subheading">Blogs By Creators</h2>
 
         <% posts.forEach(function(post) { %>
             <h1 class="mt-5">
                 <%= post.title %>
             </h1>
             <p class="lead">
-                <%= post.content.substring(0, 100)%>...
+                <%= post.content.substring(0, 300)%>...
                     <a href="/posts/<%=post.title %>">Read More</a>
             </p>
             <% }); %>
