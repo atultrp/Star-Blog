@@ -1,5 +1,5 @@
 # ⚡️ Star-Blog ⚡️
-This is the Blogging website where you can post your thoughts, your daily life routine and whatever you want to share the world. Easy Peasy!!
+Basically, Star Blog is a blogging site in which any user can share his/her thoughts without any registration by typing his/her name and location, and if he/she don't wanna share his/her information then user can leave the section empty and share his/her thoughts freely. This project also include a beautiful home page with famous quotes by famous stars, an about page as you already seen. In this project many tech included, the list of the tech are listed below.
 
 ## 📃️ Documentation
 
@@ -12,7 +12,7 @@ This website is simply made by using :
 * [Express.js](https://expressjs.com/)
 * [EJS](https://ejs.co/)
 
-## 📍️ Demo
+<!-- ## 📍️ Demo -->
 
 
 ## 😯️ Features
