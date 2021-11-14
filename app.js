@@ -5,17 +5,17 @@ var _ = require('lodash');
 
 const app = express();
 
-const apiURL = "https://api.quotable.io/random";
+// const apiURL = "https://api.quotable.io/random";
 
-async function fetchRandomQuote() {
-    const response = await fetch(apiURL);
-    if (!response.ok) throw new Error('Could not fetch a new quote');
-    const data = await response.json();
-    return {
-        quote: data.content,
-        author: data.author
-    };
-}
+// async function fetchRandomQuote() {
+//     const response = await fetch(apiURL);
+//     if (!response.ok) throw new Error('Could not fetch a new quote');
+//     const data = await response.json();
+//     return {
+//         quote: data.content,
+//         author: data.author
+//     };
+// }
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -52,7 +52,7 @@ app.post("/compose", function (req, res) {
         authorName: req.body.authorName,
         location: req.body.location
     };
-    console.log(post)
+    // console.log(post)
     posts.push(post);
     res.redirect("/");
 });
@@ -69,7 +69,7 @@ app.get("/posts/:postName", function (req, res) {
                 authorName: post.authorName,
                 location: post.location
             });
-            console.log(name)
+            // console.log(name)
         }
     });
 });
