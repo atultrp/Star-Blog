@@ -49,8 +49,8 @@ app.post("/compose", function (req, res) {
     const post = {
         title: req.body.postTitle,
         content: req.body.postBody,
-        authorName: req.body.authorName,
-        location: req.body.location
+        authorName: (req.body.authorName ? req.body.authorName : "Unknown"),
+        location: (req.body.location ? req.body.location : "Unknown")
     };
     // console.log(post)
     posts.push(post);
@@ -73,6 +73,35 @@ app.get("/posts/:postName", function (req, res) {
         }
     });
 });
+
+
+// Dark Mode Code
+
+// if (input == true){
+//     document.body.style.backgroundColor = black;
+//     document.body.style.color = white;
+// }
+
+// else {
+//     document.body.style.backgroundColor = white;
+//     document.body.style.color = black;
+// }
+
+// 2nd method 
+
+// const toggleMode = document.getElementById("toggle");
+// toggleMode.addEventListener("click", modeSwitch);
+
+// let isLight = true;
+
+// function modeSwitch() {
+//   isLight = !isLight;
+//   let root = document.body;
+  
+//   isLight ? toggleMode.innerText = "🌞" : toggleMode.innerText = "🌚";
+  
+//   root.classList.toggle("lightMode");
+// }
 
 
 
